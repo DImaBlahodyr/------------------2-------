@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 0</title>
+
+    <style>
+      body {
+        background-color: lightgray;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .header {
+        max-width: 1425px;
+        margin: 0 auto;
+        background-color: burlywood;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 30px;
+      }
+      .content {
+        max-width: 600px;
+        margin: 10px auto;
+        background-color: burlywood;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5px 0;
+      }
+      .btn {
+        max-width: 300px;
+        margin: 30px auto;
+      }
+      .button {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: green;
+        margin: 15px 25px;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 20px;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">Задача 0</div>
+    <div class="content">
+      <p>Відповідь до задачі:</p>
+
+      <script>
+        let a = 12;
+        let b = 31;
+        let c = 7;
+
+        let s1 = a + 12 + b;
+        document.write(`1. S1 = ${s1} <br>`);
+
+        let s2 = Math.sqrt((a + b) / (2 * a));
+        document.write(`2. S2 = ${s2.toFixed(3)} <br>`);
+
+        let s3 = Math.cbrt((a + b) * c);
+        document.write(`3. S3 = ${s3.toFixed(2)} <br>`);
+
+        let s4 = Math.sin(a / -b);
+        document.write(`4. S4 = ${s4.toFixed(3)} <br>`);
+      </script>
+    </div>
+    <div class="btn">
+      <a class="button" href="./index.html">На головну</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <style>
+      body {
+        background-color: lightgray;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .header {
+        max-width: 1425px;
+        margin: 0 auto;
+        background-color: burlywood;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 30px;
+      }
+      .content {
+        max-width: 400px;
+        margin: 10px auto;
+        background-color: burlywood;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5px 0;
+      }
+      .btn {
+        max-width: 300px;
+        margin: 30px auto;
+      }
+      .button {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: green;
+        margin: 15px 25px;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 20px;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Задача 0</div>
+    <div class="content">
+      <script>
+        let priceFirstProduct = parseFloat(
+          prompt('Введіть вартість першого товару')
+        );
+        let numberFirstProduct = parseInt(
+          prompt('Введіть кількість першого товару')
+        );
+        let priceSecondProduct = parseFloat(
+          prompt('Введіть вартість другого товару')
+        );
+        let numberSecondProduct = parseInt(
+          prompt('Введіть кількість другого товару')
+        );
+        let priceThirdProduct = parseFloat(
+          prompt('Введіть вартість третього товару')
+        );
+        let numberThirdProduct = parseInt(
+          prompt('Введіть кількість третього товару')
+        );
+
+        let totalFirstProduct = priceFirstProduct * numberFirstProduct;
+        let totalSecondProduct = priceSecondProduct * numberSecondProduct;
+        let totalThirdProduct = priceThirdProduct * numberThirdProduct;
+
+        let totalProducts =
+          totalFirstProduct + totalSecondProduct + totalThirdProduct;
+
+        document.write(
+          `Загальна вартість першого товару: ${totalFirstProduct} <br>`
+        );
+        document.write(
+          `Загальна вартість другого товару: ${totalSecondProduct} <br>`
+        );
+        document.write(
+          `Загальна вартість третього товару: ${totalThirdProduct} <br>`
+        );
+        document.write(`Сума: ${totalProducts}`);
+      </script>
+    </div>
+    <div class="btn">
+      <a class="button" href="./index.html">На головну</a>
+    </div>
+  </body>
+</html>
